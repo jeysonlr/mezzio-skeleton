@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  php:
+    container_name: skeleton
+    build:
+      context: .
+    volumes:
+      - ./:/var/www
+    ports:
+      - 8094:80
